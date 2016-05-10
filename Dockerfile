@@ -1,19 +1,3 @@
-Skip to content
-This repository
-Search
-Pull requests
-Issues
-Gist
- @tossp
- Watch 17
-  Star 46
- Fork 11 hashicorp/docker-consul
- Code  Pull requests 0  Pulse  Graphs
-Branch: master Find file Copy pathdocker-consul/0.6/Dockerfile
-89a273c  19 days ago
-@slackpad slackpad Adjusts the entrypoint to properly Consul subcommands and pass throug…
-2 contributors @slackpad @bastiaanb
-RawBlameHistory     72 lines (60 sloc)  3.52 KB
 FROM alpine:3.3
 MAINTAINER James Phillips <james@hashicorp.com> (@slackpad)
 
@@ -85,5 +69,3 @@ ENTRYPOINT ["docker-entrypoint.sh"]
 # in RAM, exposes a web UI, and bootstraps itself. Don't use this configuration
 # for production.
 CMD ["agent", "-dev"]
-Status API Training Shop Blog About
-© 2016 GitHub, Inc. Terms Privacy Security Contact Help
